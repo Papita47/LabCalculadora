@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
-public class Dividir {
-    
-    
-    static int resultadofinal;
+public class Calculadora {
+	
     public static int suma(int a, int b) {
         return a + b;
     }
     public static int division(int a, int b) {
         return a / b;
+    }
+    public Calculadora () {
+    	
     }
 
 
@@ -30,25 +31,25 @@ public class Dividir {
         switch (operacion) {
             case 1:
             int resultadoS = suma(num1, num2);
-            int resultadofinal = resultadoS;
+            System.out.println("El resultado es : " + resultadoS);
                 break;
             case 2:
             int resultadoR = resta(num1, num2);
-            int resultadofinal = resultadoR;
+            System.out.println("El resultado es : " + resultadoR);
                 break;
             case 3:
             int resultadoM = multiplicacion(num1, num2);
-            int resultadofinal = resultadoM;
+            System.out.println("El resultado es : " + resultadoM);
                 break;
             case 4:
             int resultadoD = division(num1, num2);
-            int resultadofinal = resultadoD;
+            System.out.println("El resultado es : " + resultadoD);
                 break;
             default:
                 break;
         }
-    }
-        System.out.println("El resultado es : " + resultadofinal);
+    
         ingresar.close();
     }
+   }
 }
