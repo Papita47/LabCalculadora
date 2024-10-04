@@ -8,11 +8,11 @@ public class Calculadora {
     public static int resta(int a, int b) {
         return a - b;
     }
+    public static int multiplicacion(int a, int b) {
+        return a * b;
+    }
     public static int division(int a, int b) {
         return a / b;
-    }
-    public Calculadora () {
-    	
     }
 
 
@@ -27,9 +27,7 @@ public class Calculadora {
         System.out.println("2-Resta");
         System.out.println("3-Multiplicacion");
         System.out.println("4-Division");
-        int operacion  =  ingresar.nextInt();
-        while (operacion != 0) {
-            
+        int operacion  =  ingresar.nextInt();    
         
         switch (operacion) {
             case 1:
@@ -53,6 +51,6 @@ public class Calculadora {
         }
     
         ingresar.close();
-    }
+    
    }
 }
